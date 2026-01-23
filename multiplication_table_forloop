@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int number = 7;
+    
+    printf("Multiplication Table for %d\n", number);
+    for (int multiplier = 1; multiplier <= 10; multiplier++) {
+        int result = number * multiplier;
+        printf("%d x %d = %d\n", number, multiplier, result);
+    }
+    return 0;
+}
