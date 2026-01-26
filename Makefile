@@ -13,5 +13,4 @@ utils.o: utils.c
 clean:
 	rm -f hello hello.o utils.o
 
-clean:
-	rm -f hello
+
