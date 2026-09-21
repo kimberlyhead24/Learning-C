@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdbool.h>
-// We are only going to include true perfect squares not d
+
+
+// We are only going to include true perfect squares not decimals
 int main() {
     int number;
 
@@ -21,6 +22,13 @@ int main() {
     } else {
         printf("%d is not a perfect square.\n", number);
     }
+
+    // Adding feature to find the next perfect square
+
+    int nextRoot = root + 1;
+    int nextPerfectSquare = nextRoot * nextRoot;
+
+    printf("%d is the next perfect square after %d.\n", nextPerfectSquare, number);
 
     return 0;
 }
